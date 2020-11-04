@@ -10,6 +10,10 @@
     <!-- Custom styles for this template -->
     <link href="styling/index.css" rel="stylesheet">
 
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
     <title>Warning Watchers</title>
 
 
@@ -59,6 +63,15 @@
           </li>
       </ul>
     </div>
+
+    <!--- ==== Search Bar ==== -->
+    <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+        aria-label="Search">
+    </form> 
+
+    </div>
   </nav>
 
 </head>
@@ -78,8 +91,7 @@
                 <div class="container">
                   <div class="card">
                   <div class="card-body">
-                     <h3> Uncomfortable with
-                      spiders? Afraid of random jump scares? Prefer not to see unnecessarily long scenes of public displays of
+                     <h3> Uncomfortable with spiders? Afraid of random jump scares? Prefer not to see unnecessarily long scenes of public displays of
                       affection?</h3> <i>Warning Watchers compiles a searchable database of media that you can look at ahead of time to see if a
                       movie is suitable for not only your family to watch together, but for yourself, friends, and anyone else you want
                       to get together with!</i>
@@ -105,14 +117,13 @@
                     </div>
                   
                     <div class="cnclbtn-container" style="background-color:#f1f1f1">
-                      <!-- (LIENNA) I want to remove the 'Cancel' button but I don know how without messing up the layout -->
-                      <button type="button" class="cancelbtn">Cancel</button>
+                      <a class="btn btn-info" href="register.html" role="button">Create an Account</a>
                       <!-- (LIENNA) Add forgot password page? -->
                       <span class="psw">Forgot <a href="#">password?</a></span>
                     </div>
                   </form>
                   <br><br>
-                  <a class="btn btn-info" href="register.html" role="button">Create an Account</a>
+                  
                </div>
 
             </div>

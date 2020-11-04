@@ -26,6 +26,8 @@ a:hover{
     text-align: center;
 }
 
+
+
 .img-fluid-header {
     display: block;
     margin-left: auto;
@@ -71,22 +73,22 @@ a:hover{
     background: #5CA4A9;
 }
 
-  form {
-    border: 3px solid #f1f1f1;
-  }
-  
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  /* Set a style for all buttons */
-  button {
+form {
+border: 2px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+
+/* style for all buttons */
+button {
     background-color: #ED6A5A;
     color: white;
     border: none;
@@ -95,49 +97,49 @@ a:hover{
     cursor: pointer;
     width: 100%;
     border-radius: 8px;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
+}
+
+/* button hover effect  */
+button:hover {
     opacity: 0.65;
-  }
-  
-  /* Extra style for the cancel button (red) */
-  .cancelbtn {
+}
+
+/* cancel button */
+.cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #ED6A5A;
     border-radius: 8px;
-  }
+}
 
-  .cnclbtn-container {
+.cnclbtn-container {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
-    
+
     position: relative;
     text-align: left;
 }
-  
-  /* The "Forgot password" text */
-  span.psw {
+
+/* The "Forgot password" text */
+span.psw {
     float: right;
     padding-top: 16px;
     color: #ED6A5A;
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
     span.psw {
-      display: block;
-      float: none;
+        display: block;
+        float: none;
     }
     .cancelbtn {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 footer {
     padding: 10px 20px;
