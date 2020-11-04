@@ -1,0 +1,10 @@
+@import url('index.css');
+
+.about-text{
+    line-height: 30px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 200px;
+    color: black;
+}
