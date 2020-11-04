@@ -5,6 +5,26 @@
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     color: black;
 }
+
+.button {
+    color: black;
+    border: 2px solid #ED6A5A;
+    transition-duration: 0.4s;
+    background-color: #ED6A5A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%
+  }
+  
+  .button:hover {
+    opacity: 0.65;
+    color: white;
+  }
