@@ -1,0 +1,22 @@
+{
+  "name": "warning-watchers",
+  "version": "1.0.0",
+  "description": "https://docs.google.com/document/d/1etDs4tIElUIzxwet0LrGoH6E9ybtG_5rL3gchDinm8I/edit?usp=sharing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uniquear/Warning-Watchers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uniquear/Warning-Watchers/issues"
+  },
+  "homepage": "https://github.com/uniquear/Warning-Watchers#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
