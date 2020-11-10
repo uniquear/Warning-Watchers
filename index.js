@@ -1,24 +1,52 @@
 //(LIENNA) I'm not sure how to handle NodeJS/Express stuff that well like at all
-const express = require('express');
-const app = express();
-const port = 8080;
+/*
+Author: Lienna Tieu 
+Date: 11/8/2020
+Description: JS file for HTML, taken from lectures in class
+*/
 
-app.get('/', (request, response) => {
-    response.sendFile(__dirname + "/index.html");
-})
+const http = require('http');
+const filesys = require('fs');
+const port = 5500;
 
-//I'm not sure what this is... it's from NodeJS_Part3_Express.pptx for Static File Opt3 - oneline approach
-app.use(express.static(__dirname));
-
-app.listen(port, () => {
-    console.log("Server listening on " + port)
-})
-
-var http = require('http')
-
-http.createServer(function (req, res)
+const requestHandler = function (req, res)
 {
-    res.writeHead(200, {'Content-Type':'text/html'});
-    res.end('Hello World!');
+    console.log(req.url);
+
+    var filename = "";
+    if(req.url.length > 1) //did we get a request to / or something else
+    {
+        filename = "./" + req.url; //any other request, build the file path
+    }
+    else
+    {
+        filename = "./index.html"; //request to / gets index.html
+    }
+
+    filesys.readFile(filename, (error, file) => {
+        if(error) //null is essentially the same as false
+        {
+            if(error.code = 'ENOENT')
+            {
+                //404 error
+                res.writeHead(404);
+                res.end(error.message);
+            }
+            console.log("Error Handling:", filename);
+            res.writeHead(500, error.message);
+            return; //end the read file with an error
+        }
+        res.end(file); //if no errors, send back the file!
+    })
+}
+
+const server = http.createServer(requestHandler);
+
+server.listen(port, (error) =>{
+    if(error)
+    {
+        return console.log("Something went wrong!", error);
+    }
+
+    console.log("Server is listening on", port);
 })
-.listen(8080);
