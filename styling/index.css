@@ -27,7 +27,6 @@ a:hover{
 }
 
 
-
 .img-fluid-header {
     display: block;
     margin-left: auto;
@@ -49,7 +48,8 @@ a:hover{
 
 .centered {
     position: absolute;
-    top: 50%;
+    margin-top: -150px;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;

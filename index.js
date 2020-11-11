@@ -1,9 +1,4 @@
 //(LIENNA) I'm not sure how to handle NodeJS/Express stuff that well like at all
-/*
-Author: Lienna Tieu 
-Date: 11/8/2020
-Description: JS file for HTML, taken from lectures in class
-*/
 
 const http = require('http');
 const filesys = require('fs');
