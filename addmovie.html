@@ -1,0 +1,117 @@
+<!-- Page to request to add a movie -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="styling/index.css" rel="stylesheet">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>Warning Watchers</title>
+
+
+<!-- NavBar from Bootstrap https://getbootstrap.com/docs/4.1/components/navbar/ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Warning Watchers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <img src="img/main-logo-transp.png" class="rounded float-left" alt="logo" width="50" height="50">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team-bio.html">Meet the Team</a>
+        </li>
+        <a class="nav-link" href="movies.html">Movies</a>
+      </li>
+
+
+<!--         <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Media
+        </a>
+        
+         (LIENNA) If not enough time, we will do movies ONLY. No books/shows
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="movies.html">Movies</a>
+          <a class="dropdown-item" href="#">Television Shows</a>
+          <a class="dropdown-item" href="#">Books</a>
+        </div>
+      </li> -->
+      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            
+            <!-- Yeah, I don't know how to format these or how to make a new page for them -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Pet Death</a>
+              <a class="dropdown-item" href="#">Flashing Lights</a>
+              <a class="dropdown-item" href="#">PDA Scenes</a>
+              <a class="dropdown-item" href="categories.html">Other Categories</a>
+            </div>
+          </li>
+      </ul>
+    </div>
+
+    <!--- ==== Search Bar ==== -->
+    <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+        aria-label="Search">
+    </form> 
+
+    </div>
+  </nav>
+
+</head>
+<body>
+    <main class= "contentContainer" role= "main">
+        <div class= "index">
+                <form action="#">
+                    <div class="container">
+                      <br>
+                      <h1>Suggest a Category</h1>
+                      <hr>
+                  
+                      <!-- ***** we will need to refine this later once the database for movie categories are up and running some variable names are incorrect -->
+                      <label for="cate-name"><h4><b>Give your category a name.</b></h4></label>
+                      <input type="text" placeholder="Enter Category Name" name="cate-name" id="cate-name" required>
+
+                      <label for="cate-name"><h4><b>Description</b></h4></label>
+                      <p>Describe why tracking your category is important. Define any terms that might be new to people. </p>
+                      <input type="text" placeholder="Enter Category Name" name="cate-name" id="cate-name" required>
+
+                      <button type="submit" class="registerbtn">Submit</button>
+                    </div>
+
+                    </div>
+                  
+                  </form>                 
+            </div>
+        </div>
+    </main>
+
+<footer>
+    CPI310 Fall 2020 Project. All Rights Reserved.
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
