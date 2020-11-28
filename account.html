@@ -84,25 +84,29 @@
     
     </head>
     <body>
-        <div class="container">
+        <div class="container" style="text-align: left; margin-top: 4rem;">
             <div class="profile">
                 <h1 style="text-align: left; color: black;">Profile</h1>
-                <form method="POST" novalidate="novalidate">
-                    <div class="form-group row">
-                        <label>Display Name</label>
+                <form>
+                  <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Display Name</label>
+                    <div class="col-sm-10">
+                      <!-- Find a way to pull the display name from the database. -->
+                      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="**PULL DISPLAY NAME FROM DATABASE**">
                     </div>
-                    <div class="form-group row">
-                        <label>Email</label>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputPassword" value="**PULL EMAIL FROM DATABASE**">
                     </div>
-                    <div class="form-group row">
-                        <label>Comments</label>
-                    </div>
+                  </div>
                 </form>
             </div>
         </div>
 
-    <footer>
-        CPI310 Fall 2020 Project. All Rights Reserved.
+    <footer style="position: absolute; bottom: 0; width: 100%;">
+      CPI310 Fall 2020 Project. All Rights Reserved.
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
