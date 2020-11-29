@@ -1,159 +1,157 @@
 body {
-    background-color: #E6EBE0;
-    color: #5CA4A9;
-    /*font-family: Arial, Helvetica, sans-serif;*/ 
-        /*(LIENNA) Not sure if I like font style anymore*/
+  background-color: #e6ebe0;
+  color: #5ca4a9;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  /*(LIENNA) Not sure if I like font style anymore*/
 }
 
-a{
-    color: #5CA4A9;
-    text-decoration: none;
+a {
+  color: #5ca4a9;
+  text-decoration: none;
 }
-a:hover{
-    color: #488387;
+a:hover {
+  color: #488387;
 }
 
 .container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
-
 .img-fluid-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    filter: brightness(35%) /* specifically for header photos */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(35%); /* specifically for header photos */
 }
 
 .img-fluid {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 .centered {
-    position: absolute;
-    margin-top: -150px;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  position: absolute;
+  margin-top: -175px;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .bottom-right {
-    position: absolute;
-    bottom: 10px;
-    right: 36px;
-    opacity: 0.25;
-    color: white;
-    font-size: 10px;
-  }
+  position: absolute;
+  bottom: 10px;
+  right: 36px;
+  opacity: 0.25;
+  color: white;
+  font-size: 10px;
+}
 
 .card-body {
-    color: white;
-    width: auto;
+  color: white;
+  width: auto;
 }
 
 .card {
-    background: #5CA4A9;
+  background: #5ca4a9;
 }
 
-.card-button
-{
-    background-color:#ED6A5A;
-    border-radius: 25px;
-    border: 2px solid white;
-    width: 200px;
-    height: 150px;
+.card-button {
+  background-color: #ed6a5a;
+  border-radius: 25px;
+  border: 2px solid white;
+  width: 200px;
+  height: 150px;
 }
 
 label {
-    margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
-width: 100%;
-padding: 12px 20px;
-display: inline-block;
-border: 1px solid #ccc;
-box-sizing: border-box;
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
-
 
 /* style for all buttons */
 button {
-    background-color: #ED6A5A;
-    color: white;
-    border: none;
-    padding: 14px 20px;
-    margin: 15px 0;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 8px;
+  background-color: #ed6a5a;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  margin: 15px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* button hover effect  */
 button:hover {
-    opacity: 0.65;
+  opacity: 0.65;
 }
 
 /* cancel button */
 .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #ED6A5A;
-    border-radius: 8px;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ed6a5a;
+  border-radius: 8px;
 }
 
 .cnclbtn-container {
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-    position: relative;
-    text-align: left;
+  position: relative;
+  text-align: left;
 }
 
 /* The "Forgot password" text */
 span.psw {
-    float: right;
-    padding-top: 5px;
-    color: #ED6A5A;
-    text-align: center;
+  float: right;
+  padding-top: 5px;
+  color: #ed6a5a;
+  text-align: center;
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }
 
 footer {
-    padding: 10px 20px;
-    background: #9BC1BC;
-    color: white;
+  padding: 10px 20px;
+  background: #9bc1bc;
+  color: white;
 }
