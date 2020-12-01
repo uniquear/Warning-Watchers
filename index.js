@@ -1,4 +1,3 @@
-//(LIENNA) I'm not sure how to handle NodeJS/Express stuff that well like at all
 
 const http = require('http');
 const filesys = require('fs');
